@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace dominio
 {
-    internal class Autor
+    public class Autor
     {
         public int Id { get; set; }
-        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public string ImagenUrl { get; set; }
 
         public override string ToString()
         {
-            return Nombre;
+            return Descripcion;
         }
     }
 }
